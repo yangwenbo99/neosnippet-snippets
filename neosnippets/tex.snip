@@ -44,11 +44,11 @@ alias   \begin{description} \description desc
 	\end{description}
 
 snippet itd
-alias   item[ \item[
+alias   item[ \item[ LID
 	\item[${1}] ${0}
 
 snippet it
-alias   item \item
+alias   item \item ELI LI
 	\item ${0}
 
 snippet sloppypar
@@ -58,7 +58,7 @@ alias   \begin{sloppypar} \sloppypar
 	\end{sloppypar}
 
 snippet enumerate
-alias   \begin{enumerate} \enumerate enum
+alias   \begin{enumerate} \enumerate enum EEN
 	\begin{enumerate}
 		\item ${1:TARGET}
 	\end{enumerate}
@@ -70,31 +70,31 @@ alias   \begin{theindex} \theindex
 	\end{theindex}
 
 snippet itemize
-alias   \begin{itemize} \itemize
+alias   \begin{itemize} \itemize EIT
 	\begin{itemize}
 		\item ${1:TARGET}
 	\end{itemize}
 
 snippet titlepage
-alias   \begin{titlepage} \titlepage
+alias   \begin{titlepage} \titlepage ETI
 	\begin{titlepage}
 		${1:TARGET}
 	\end{titlepage}
 
 snippet verbatim
-alias   \begin{verbatim} verb \verbatim
+alias   \begin{verbatim} verb \verbatim EVE
 	\begin{verbatim}
 		${1:TARGET}
 	\end{verbatim}
 
 snippet verbatimtab
-alias   \begin{verbatimtab} \verbatimtab
+alias   \begin{verbatimtab} \verbatimtab EVM
 	\begin{verbatimtab}[${1:8}]
 		${2:TARGET}
 	\end{verbatim}
 
 snippet trivlist
-alias   \begin{trivlist} \trivlist
+alias   \begin{trivlist} \trivlist  ETL
 	\begin{trivlist}
 		${1:TARGET}
 	\end{trivlist}
@@ -106,11 +106,11 @@ alias   \begin{verse} \verse
 	\end{verse}
 
 snippet table
-alias   \begin{table} \table
+alias   \begin{table} \table ETA
 	\begin{table}[${1}]
 		\centering
 		\caption{${2}}
-		\label{${3}}
+		\label{tab:${3}}
 		\begin{tabular}{${4}}
 			${5}
 		\end{tabular}
@@ -129,7 +129,7 @@ alias   \begin{tabbing} \tabbing
 	\end{tabbing}
 
 snippet note
-alias   \begin{note} \note
+alias   \begin{note} \note ENO
 	\begin{note}
 		${1:TARGET}
 	\end{note}
@@ -171,13 +171,13 @@ alias   \begin{displaymath} \displaymath
 	\end{displaymath}
 
 snippet abstract
-alias   \begin{abstract} \abstract
+alias   \begin{abstract} \abstract EAB
 	\begin{abstract}
 		${1:TARGET}
 	\end{abstract}
 
 snippet align
-alias   \begin{align} \align
+alias   \begin{align} \align EAL
 	\begin{align}
 		${1:TARGET}
 	\end{align}
@@ -189,7 +189,7 @@ alias   \begin{align*} \align*
 	\end{align*}
 
 snippet aligned
-alias   \begin{aligned} \aligned
+alias   \begin{aligned} \aligned EAD
        \begin{aligned}
                ${1:TARGET}
        \end{aligned}
@@ -207,7 +207,7 @@ alias   \begin{eqnarray*} \eqnarray*
 	\end{eqnarray*}
 
 snippet equation
-alias   \begin{equation} \equation
+alias   \begin{equation} \equation EEQ
 	\begin{equation}
 		${1:TARGET}
 	\end{equation}
@@ -231,12 +231,12 @@ alias   \begin{document} \document
 	\end{document}
 
 snippet figure
-alias   \begin{figure} \figure
+alias   \begin{figure} \figure EFI
 	\begin{figure}[${1}]
 		\centering
 		\includegraphics[${2:width=${3\}}]{${4}}
 		\caption{${5}}
-		\label{${6}}
+		\label{fig:${6}}
 	\end{figure}
 
 snippet filecontents
@@ -282,13 +282,13 @@ alias   \begin{math} \math
 	\end{math}
 
 snippet quote
-alias   \begin{quote} \quote
+alias   \begin{quote} \quote EQU
 	\begin{quote}
 		${1:TARGET}
 	\end{quote}
 
 snippet matrix
-alias   \begin{matrix} \matrix
+alias   \begin{matrix} \matrix EMA
 	\begin{matrix}
 		${1:TARGET}
 	\end{matrix}
@@ -326,37 +326,37 @@ alias   \begin{Vmatrix} \Vmatrix
 # ========== SECTION ==========
 
 snippet \part
-alias   part \part{
+alias   part \part{ SPA
 	\part{${1}}
 	${0:TARGET}
 
 snippet \chapter
-alias   chapter \chapter{
+alias   chapter \chapter{ SCH
 	\chapter{${1}}
 	${0:TARGET}
 
 snippet \section
-alias   section \section{
+alias   section \section{ SSE
 	\section{${1}}
 	${0:TARGET}
 
 snippet \subsection
-alias   subsection \subsection{
+alias   subsection \subsection{ SSS
 	\subsection{${1}}
 	${0:TARGET}
 
 snippet \subsubsection
-alias   subsubsection \subsubsection{
+alias   subsubsection \subsubsection{ S2S
 	\subsubsection{${1}}
 	${0:TARGET}
 
 snippet \paragraph
-alias   paragraph \paragraph{
+alias   paragraph \paragraph{ SPA
 	\paragraph{${1}}
 	${0:TARGET}
 
 snippet \subparagraph
-alias   subparagraph \subparagraph{
+alias   subparagraph \subparagraph{ SSP
 	\subparagraph{${1}}
 	${0:TARGET}
 
@@ -374,25 +374,25 @@ abbr	\left \right
 # ========== FONT ==========
 
 snippet bfseries
-alias   \begin{bfseries} \bfseries
+alias   \begin{bfseries} \bfseries EBF
 	\begin{bfseries}
 		${1:TARGET}
 	\end{bfseries}
 
 snippet mdseries
-alias   \begin{mdseries} \mdseries
+alias   \begin{mdseries} \mdseries EMD
 	\begin{mdseries}
 		${1:TARGET}
 	\end{mdseries}
 
 snippet ttfamily
-alias   \begin{ttfamily} \ttfamily
+alias   \begin{ttfamily} \ttfamily ETT
 	\begin{ttfamily}
 		${1:TARGET}
 	\end{ttfamily}
 
 snippet sffamily
-alias   \begin{sffamily} \sffamily
+alias   \begin{sffamily} \sffamily ESF
 	\begin{sffamily}
 		${1:TARGET}
 	\end{sffamily}
@@ -465,31 +465,31 @@ alias   textit \textit{
 
 # ==== BEAMER ====
 snippet frame
-alias   \begin{frame} \frame
+alias   \begin{frame} \frame EFR
 	\begin{frame}{${1:#:frametitle}}
 		${2:TARGET}
 	\end{frame}
 
 snippet block
-alias   \begin{block}
+alias   \begin{block} EBL
 	\begin{block}{${1:#:title}}
 		${2:TARGET}
 	\end{block}
 
 snippet exampleblock
-alias   \begin{exampleblock}
+alias   \begin{exampleblock} EEB
 	\begin{exampleblock}{${1:#:title}}
 		${2:TARGET}
 	\end{exampleblock}
 
 snippet alertblock
-alias   \begin{alertblock}
+alias   \begin{alertblock} EAL
 	\begin{alertblock}{${1:#:title}}
 		${2:TARGET}
 	\end{alertblock}
 
 snippet columns
-alias   \begin{columns} \columns
+alias   \begin{columns} \columns ECS
 	\begin{columns}
 		\begin{column}{${1:#:width}${2:\\\textwidth}}
 			${0:#:body}
@@ -497,14 +497,14 @@ alias   \begin{columns} \columns
 	\end{columns}
 
 snippet column
-alias   \begin{column} \column
+alias   \begin{column} \column ECO
 	\begin{column}{${1:#:width}${2:\\\textwidth}}
 		${0:#:body}
 	\end{column}
 
 # ========== TikZ ==========
 snippet tikzfig
-alias   figuretikz
+alias   figuretikz EFT
 	\begin{figure}[${1}]
 		\centering
 		\begin{tikzpicture}[${2}]
@@ -515,13 +515,13 @@ alias   figuretikz
 	\end{figure}
 
 snippet tikzpicture
-alias   \begin{tikzpicture}
+alias   \begin{tikzpicture} ETP
 	\begin{tikzpicture}[${1}]
 		${2:TARGET}
 	\end{tikzpicture}
 
 snippet scope
-alias   \begin{scope}
+alias   \begin{scope} ESC
 	\begin{scope}[${1}]
 		${2:TARGET}
 	\end{scope}
@@ -587,6 +587,14 @@ alias   \usepackage
 snippet ref
 alias   \ref
 	\ref{${1}}${0}
+
+snippet cref
+alias   \cref
+	\cref{${1}}${0}
+
+snippet Cref
+alias   \Cref
+	\Cref{${1}}${0}
 
 snippet label
 alias   \label
